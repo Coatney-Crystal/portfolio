@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    position: relative;
+    -webkit-animation: myfirst 10s; /* Chrome, Safari, Opera */
+    animation: myfirst 10s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background:green; left:0px; top:0px;}
+    25%  {background:blueviolet; left:200px; top:0px;}
+    50%  {background:orangered; left:200px; top:200px;}
+    75%  {background:yellow; left:0px; top:200px;}
+    100% {background:black; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background:red; left:0px; top:0px;}
+    25%  {background:yellow; left:200px; top:0px;}
+    50%  {background:blue; left:200px; top:200px;}
+    75%  {background:green; left:0px; top:200px;}
+    100% {background:red; left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This is a fun example of how css transitions work. I used percentages to tell the page when to transition the 
+    color boxes. I also used positioning to show where I wanted to the boxes to go.</p>
+
+<div></div>
+</body>
+</html>
