@@ -2,13 +2,19 @@
 <html>
 <body>
 
-<h1>My First Page</h1>
-
-<p id="smaple"></p>
+<div onmouseover="mOver(this)" onmouseout="mOut(this)" 
+style="background-color:orange;width:400px;height:40px;padding:20px;">
+Mouse Over Me</div>
 
 <script>
-document.getElementById("sample").innerHTML = "This is How DOM manuplation works!";
+function mOver(obj) {
+    obj.innerHTML = "This was done through DOM Manuplation using a function"
+}
+
+function mOut(obj) {
+    obj.innerHTML = "Put Your Mouse over me and I will Change my Message"
+}
 </script>
 
 </body>
-</html>
+</html> 
