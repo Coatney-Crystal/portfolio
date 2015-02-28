@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   
+     
+<script>
+    var text = '{"todoList":['+
+                '{"Task": "laundry","time": "10am" }, '+
+                '{"Task": "dishes","time": "12pm" }, '+
+                '{"Task": "scrubfloors","time": "9am" }]}';
+        
+        obj = JSON.parse(text);
+        
+                for(i=0; i< obj.lenght; i++) {
+                    function findChore() {
+                    document.getElementById("sample").innerHTML = 
+                    obj.todoList[i].Task + " " +obj.todoList[i].time;
+            i++
+                    }
+    
+                }
+                
+</script>
+</head>
+<body>
+    <h3> Here is how A JSON string works</h3>
+    <button onclick="findChore()">Click until you see all of your chores</button>
+    
+    <p id="sample"></p>
+    
+</body>
+   
+    
+</html>
